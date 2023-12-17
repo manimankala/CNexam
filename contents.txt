@@ -1,0 +1,14 @@
+<?php
+$sourceFile = 'source.txt'; 
+$destinationFile = 'destination.txt'; 
+if (file_exists($sourceFile) && is_readable($sourceFile)) {
+    $content = file_get_contents($sourceFile);
+    if (file_put_contents($destinationFile, $content) !== false) {
+        echo "Contents of '$sourceFile' have been successfully copied to '$destinationFile'.";
+    } else {
+        echo "Failed to copy contents to '$destinationFile'.";
+    }
+} else {
+    echo "Source file '$sourceFile' is either missing or not readable.";
+}
+?>

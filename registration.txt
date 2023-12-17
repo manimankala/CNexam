@@ -1,0 +1,47 @@
+registration.jsp
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+<h2>Registration Form</h2>
+<%-- Form to capture user registration details --%>
+<form method="post" action="registration_process.jsp">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName"><br><br>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>    
+    <input type="submit" value="Register">
+</form>
+</body>
+</html>
+
+registration_process.jsp
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Process</title>
+</head>
+<body>
+<%
+String firstName = request.getParameter("firstName");
+String lastName = request.getParameter("lastName");
+String email = request.getParameter("email");
+String password = request.getParameter("password");
+out.println("<h2>Registration Details</h2>");
+out.println("First Name: " + firstName + "<br>");
+out.println("Last Name: " + lastName + "<br>");
+out.println("Email: " + email + "<br>");
+out.println("Password: " + password + "<br>");
+%>
+</body>
+</html>
