@@ -1,41 +1,12 @@
-iv. Simulate to Find the Number of Packets Dropped due to Congestion
-AIM:
-Simulate the transmission of ping messages over a network topology consisting of 6 nodes
-and find the number of packets dropped due to congestion. Topology:-
-Sender:-
-stcp –p 2000 –l 1024 1.0.1.4
-Receiver:-
-rtcp –p 2000 –l 1024
-Command Console:-
-Goto tools-> simulation time and change Simulation time to 100. During run mode, double
-click host 2 and then click command console. And execute the following command. ping 1.0.1.4
-Parameters:-
-Drop Packets and Collision Packets.
-      
-Step1: Drawing topology
-1. Select/click the SUBNET icon on the toolbar and click the left mouse button on the editor, to
-place a SUBNET on the editor.
-2. A pop up window appears requesting the number of nodes and radius for the subnet Set number of nodes=6;
-Set radius of subnet >150
-3. Click on the “E” icon on the toolbar to save the current topology e.g: file4.tpl (Look for the ******.tpl extension.)
-NOTE: Changes cannot / (should not) be done after selecting
-Step2: Configuration
-1. Double click the left mouse button while cursor is on a HOST to open the HOST window.
-2. Click NODE EDITOR Button on the HOST window and select the INTERFACE tab (1st tab) from the
-modal window that pops up.
-3. Determine the IP address of the selected host.
-4. Click OK button on the INTERFACE window to exit and once again click on the OK button on the HOST window to exit.
-5. Repeat the above step for 2 other HOSTS
-6. Also click NODE EDITOR Button on the HOST window and select the MAC tab from the modal window that pops up.
-7. Select LOG STATISTICS and select checkbox for drop and collision log statistics in the MAC window
-  
-8. Click OK button on the MAC window to exit and once again click on the OK button on the HOST window to exit.
-9. Repeat steps 6 to 9 for the other hosts selected at step 5.
-10. Select G_Setting from the menu bar and select Simulation from the drop down list Set simulation time>600sec
-Step3: Simulate
-i. Click “R” icon on the tool bar
-ii. Select Simulation in the menu bar and click/ select RUN in the dropdown list to execute the simulation.
-iii. During simulation, open a new terminal window.
-iv. Type ping IP address of a host in the subnet at the command prompt.
-v. To view results, Open up new TERMINAL window, move to file4.results folder and open drop
-and collision log files in separate TERMINAL window.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="contents.txt">contents</a>
+    <a href="registration.txt">registration</a>
+</body>
+</html>
